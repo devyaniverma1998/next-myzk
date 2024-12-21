@@ -9,7 +9,7 @@ const ShippingDeliveryPolicy = () => {
         {/* Policy Sections */}
         <Typography
           variant="h4"
-          sx={{ color: "hsl(23.43deg 89.74% 54.12%)", marginBottom: 2 }}
+          sx={{ color: "hsl(221.21deg 83.19% 53.33%)", marginBottom: 2 }}
         >
           Shipping Delivery Policy
         </Typography>

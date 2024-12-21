@@ -93,7 +93,7 @@ const Hero = () => {
                   fontSize: "70px",
                   fontWeight: "bold",
                   mt: 1,
-                  background: "linear-gradient(90deg, #f37321, black)",
+                  background: "linear-gradient(90deg, #2563eb, black)",
                   WebkitBackgroundClip: "text",
                   WebkitTextFillColor: "transparent",
                 }}
@@ -182,10 +182,10 @@ export default Hero;
 //             earum obcaecati. Optio, nam!
 //           </p>
 //           <div className="flex gap-x-1 max-lg:flex-col max-lg:gap-y-1">
-//             <button className="bg-white text-orange-600 font-bold px-12 py-3 max-lg:text-xl max-sm:text-lg hover:bg-gray-100">
+//             <button className="bg-white text-blue-600 font-bold px-12 py-3 max-lg:text-xl max-sm:text-lg hover:bg-gray-100">
 //               BUY NOW
 //             </button>
-//             <button className="bg-white text-orange-600 font-bold px-12 py-3 max-lg:text-xl max-sm:text-lg hover:bg-gray-100">
+//             <button className="bg-white text-blue-600 font-bold px-12 py-3 max-lg:text-xl max-sm:text-lg hover:bg-gray-100">
 //               LEARN MORE
 //             </button>
 //           </div>

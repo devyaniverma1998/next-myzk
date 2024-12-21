@@ -61,7 +61,7 @@ const CartPage = () => {
                             <h3 className="text-sm">
                               <Link
                                 href={`#`}
-                                className="text-2xl font-bold text-gray-700 hover:text-[#f37321] transition-colors duration-300"
+                                className="text-2xl font-bold text-gray-700 hover:text-[#2563eb] transition-colors duration-300"
                               >
                                 {product.title}
                               </Link>
@@ -189,7 +189,7 @@ const CartPage = () => {
                 <div className="mt-6">
                   <Link
                     href="/checkout"
-                    className="block flex justify-center items-center w-full uppercase bg-orange-600 px-4 py-3 text-base border border-black border-gray-300 font-bold text-white shadow-sm hover:bg-black hover:bg-gray-100 focus:outline-none focus:ring-2"
+                    className="block flex justify-center items-center w-full uppercase bg-blue-600 px-4 py-3 text-base border border-black border-gray-300 font-bold text-white shadow-sm hover:bg-black hover:bg-gray-100 focus:outline-none focus:ring-2"
                   >
                     <span>Checkout</span>
                   </Link>

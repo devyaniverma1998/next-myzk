@@ -29,9 +29,9 @@ const AddToCartIcon = ({
      <ShoppingCart  onClick={handleAddToCart} />
     {/* <button
       onClick={handleAddToCart}
-      // className="btn w-[200px] text-lg border border-gray-300 border-1 font-normal bg-white text-orange-500 hover:bg-black hover:text-white hover:border-blue-500 hover:scale-110 transition-all uppercase ease-in max-[500px]:w-full"
+      // className="btn w-[200px] text-lg border border-gray-300 border-1 font-normal bg-white text-blue-500 hover:bg-black hover:text-white hover:border-blue-500 hover:scale-110 transition-all uppercase ease-in max-[500px]:w-full"
       
-      className="btn w-[200px] text-lg border border-gray-300 border-1 font-normal bg-white text-black hover:bg-orange-600 hover:text-white hover:border-orange-900 hover:scale-110 transition-all uppercase ease-in max-[500px]:w-full">
+      className="btn w-[200px] text-lg border border-gray-300 border-1 font-normal bg-white text-black hover:bg-blue-600 hover:text-white hover:border-blue-900 hover:scale-110 transition-all uppercase ease-in max-[500px]:w-full">
       {" "}
       Add to cart
     </button> */}

@@ -70,7 +70,7 @@ function SupportTicket () {
       <Typography
         variant='h5'
         align='center'
-        sx={{ marginBottom: '1.5rem', fontWeight: 'bold', color: '#f37321' }}
+        sx={{ marginBottom: '1.5rem', fontWeight: 'bold', color: '#2563eb' }}
       >
         Submit a Support Ticket
       </Typography>
@@ -138,7 +138,7 @@ function SupportTicket () {
           variant='contained'
           sx={{
             padding: '0.8rem',
-            backgroundColor: '#f37321 !important',
+            backgroundColor: '#2563eb !important',
             color: 'black',
             fontWeight: 'bold',
             '&:hover': {

@@ -19,7 +19,7 @@ const HelpFaq = () => {
                         variant="h4"
                         align="center"
                         gutterBottom
-                        sx={{ color: '#f37321', fontWeight: 'bold' }}
+                        sx={{ color: '#2563eb', fontWeight: 'bold' }}
                     >
                         Help & FAQs
                     </Typography>
@@ -27,7 +27,7 @@ const HelpFaq = () => {
                     {/* Frequently Asked Questions */}
                     <Box id="faqs" sx={{ mt: 4 }}>
                         <Box mb={2}>
-                            <Typography variant="h6" sx={{ color: '#f37321' }}>
+                            <Typography variant="h6" sx={{ color: '#2563eb' }}>
                                 What is Myzk?
                             </Typography>
                             <Typography>
@@ -37,7 +37,7 @@ const HelpFaq = () => {
                         </Box>
 
                         <Box mb={2}>
-                            <Typography variant="h6" sx={{ color: '#f37321' }}>
+                            <Typography variant="h6" sx={{ color: '#2563eb' }}>
                                 How can I track my order?
                             </Typography>
                             <Typography>
@@ -47,7 +47,7 @@ const HelpFaq = () => {
                         </Box>
 
                         <Box mb={2}>
-                            <Typography variant="h6" sx={{ color: '#f37321' }}>
+                            <Typography variant="h6" sx={{ color: '#2563eb' }}>
                                 What payment methods are accepted?
                             </Typography>
                             <Typography>
@@ -57,7 +57,7 @@ const HelpFaq = () => {
                         </Box>
 
                         <Box mb={2}>
-                            <Typography variant="h6" sx={{ color: '#f37321' }}>
+                            <Typography variant="h6" sx={{ color: '#2563eb' }}>
                                 How do I return an item?
                             </Typography>
                             <Typography>
@@ -68,7 +68,7 @@ const HelpFaq = () => {
                         </Box>
 
                         <Box mb={2}>
-                            <Typography variant="h6" sx={{ color: '#f37321' }}>
+                            <Typography variant="h6" sx={{ color: '#2563eb' }}>
                                 What should I do if I forget my password?
                             </Typography>
                             <Typography>
@@ -80,7 +80,7 @@ const HelpFaq = () => {
 
                     {/* Contact Information */}
                     <Box >
-                        <Typography variant="h6" sx={{ color: '#f37321' }}>
+                        <Typography variant="h6" sx={{ color: '#2563eb' }}>
                             Contact Us
                         </Typography>
                         <Typography>
@@ -94,13 +94,13 @@ const HelpFaq = () => {
                                     primary="Email:"
                                     secondary="operations@myzk.in"
                                     primaryTypographyProps={{ fontWeight: 'bold' }}
-                                    sx={{ borderRight: '2px solid orange', pr: 3 }} // Add right border and padding
+                                    sx={{ borderRight: '2px solid blue', pr: 3 }} // Add right border and padding
                                 />
                                 <ListItemText
                                     primary="Address:"
                                     secondary="E-169, E Block, Sector 63, Noida, (U.P) 201301"
                                     primaryTypographyProps={{ fontWeight: 'bold' }}
-                                    sx={{ borderRight: '2px solid orange', pl: 2 }} // No border for the last item and padding-left
+                                    sx={{ borderRight: '2px solid blue', pl: 2 }} // No border for the last item and padding-left
                                 />
                                 <ListItemText
                                     primary="Phone:"

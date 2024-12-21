@@ -19,7 +19,7 @@ const NewsLetterfooter = () => {
             <h2
               className='
         text-3xl sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl font-bold
-        bg-gradient-to-r from-black via-[#ea580c] to-[#ea580c]
+        bg-gradient-to-r from-black via-[#2563eb] to-[#2563eb]
         bg-clip-text text-transparent
       '
             >
@@ -58,10 +58,10 @@ const NewsLetterfooter = () => {
                   borderColor: '#e0e0e0'
                 },
                 '&:hover fieldset': {
-                  borderColor: '#f37321'
+                  borderColor: '#2563eb'
                 },
                 '&.Mui-focused fieldset': {
-                  borderColor: '#f37321'
+                  borderColor: '#2563eb'
                 }
               }
             }}
@@ -73,7 +73,7 @@ const NewsLetterfooter = () => {
             variant='contained'
             color='warning'
             sx={{
-              backgroundColor: '#f37321 !important',
+              backgroundColor: '#2563eb !important',
               color: 'white',
               padding: '8px 20px',
               borderRadius: '0 20px 20px 0', // Rounded border on right side only

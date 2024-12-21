@@ -22,50 +22,50 @@ const DashboardSidebar = () => {
   return (
     <div className="xl:w-[400px] bg-black h-full max-xl:w-full">
       <Link href="/admin">
-        <div className="flex gap-x-2 w-full hover:bg-orange-600 cursor-pointer items-center py-6 pl-5 text-xl text-white">
+        <div className="flex gap-x-2 w-full hover:bg-blue-600 cursor-pointer items-center py-6 pl-5 text-xl text-white">
           <MdDashboard className="text-2xl" />{" "}
           <span className="font-normal">Dashboard</span>
         </div>
       </Link>
       <Link href="/admin/orders">
-        <div className="flex gap-x-2 w-full hover:bg-orange-600 cursor-pointer items-center py-6 pl-5 text-xl text-white">
+        <div className="flex gap-x-2 w-full hover:bg-blue-600 cursor-pointer items-center py-6 pl-5 text-xl text-white">
           <FaBagShopping className="text-2xl" />{" "}
           <span className="font-normal">Orders</span>
         </div>
       </Link>
       <Link href="/admin/products">
-        <div className="flex gap-x-2 w-full hover:bg-orange-600 cursor-pointer items-center py-6 pl-5 text-xl text-white">
+        <div className="flex gap-x-2 w-full hover:bg-blue-600 cursor-pointer items-center py-6 pl-5 text-xl text-white">
           <FaTable className="text-2xl" />{" "}
           <span className="font-normal">Products</span>
         </div>
       </Link>
       <Link href="/admin/categories">
-        <div className="flex gap-x-2 w-full hover:bg-orange-600 cursor-pointer items-center py-6 pl-5 text-xl text-white">
+        <div className="flex gap-x-2 w-full hover:bg-blue-600 cursor-pointer items-center py-6 pl-5 text-xl text-white">
           <MdCategory className="text-2xl" />{" "}
           <span className="font-normal">Categories</span>
         </div>
       </Link>
       <Link href="/admin/tickets">
-        <div className="flex gap-x-2 w-full hover:bg-orange-600 cursor-pointer items-center py-6 pl-5 text-xl text-white">
+        <div className="flex gap-x-2 w-full hover:bg-blue-600 cursor-pointer items-center py-6 pl-5 text-xl text-white">
           <FaRegUser className="text-2xl" />{" "}
           <span className="font-normal">Support Tickets</span>
         </div>
       </Link>
       <Link href="/admin/users">
-        <div className="flex gap-x-2 w-full hover:bg-orange-600 cursor-pointer items-center py-6 pl-5 text-xl text-white">
+        <div className="flex gap-x-2 w-full hover:bg-blue-600 cursor-pointer items-center py-6 pl-5 text-xl text-white">
           <FaRegUser className="text-2xl" />{" "}
           <span className="font-normal">Users</span>
         </div>
       </Link>
       
       <Link href="/admin/warranties">
-        <div className="flex gap-x-2 w-full hover:bg-orange-600 cursor-pointer items-center py-6 pl-5 text-xl text-white">
+        <div className="flex gap-x-2 w-full hover:bg-blue-600 cursor-pointer items-center py-6 pl-5 text-xl text-white">
           <FaBagShopping className="text-2xl" />{" "}
           <span className="font-normal">Warranties</span>
         </div>
       </Link>
       <Link href="/admin/settings">
-        <div className="flex gap-x-2 w-full hover:bg-orange-600 cursor-pointer items-center py-6 pl-5 text-xl text-white">
+        <div className="flex gap-x-2 w-full hover:bg-blue-600 cursor-pointer items-center py-6 pl-5 text-xl text-white">
           <FaGear className="text-2xl" />{" "}
           <span className="font-normal">Settings</span>
         </div>

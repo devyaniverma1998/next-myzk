@@ -90,8 +90,8 @@ interface InputCategory {
                   borderColor: 'black',
                   '&:hover': {
                     color: 'white',
-                    backgroundColor: "#f37321",
-                    borderColor: 'orange',
+                    backgroundColor: "#2563eb",
+                    borderColor: 'blue',
                   },
                 }}
               >
@@ -113,12 +113,12 @@ interface InputCategory {
                   sx={{
                     width:"200px",
                     color: isActive ? 'white' : 'black',
-                    backgroundColor: isActive ? "#f37321 !important" : 'transparent',
+                    backgroundColor: isActive ? "#2563eb !important" : 'transparent',
                     borderColor: isActive ? 'black !important' : 'white',
                     '&:hover': {
                       color: 'white',
-                      backgroundColor: "#f37321 !important",
-                      borderColor: 'orange !important',
+                      backgroundColor: "#2563eb !important",
+                      borderColor: 'blue !important',
                     },
                   }}
                 

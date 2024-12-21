@@ -136,7 +136,7 @@ const ProductItem = ({
                   <IconButton
                     aria-label='add to wishlist'
                     sx={{
-                      backgroundColor: '#f37321',
+                      backgroundColor: '#2563eb',
                       color: 'black',
                       borderRadius: '50%',
                       '&:hover': {
@@ -153,7 +153,7 @@ const ProductItem = ({
                   <IconButton
                     aria-label='add to cart'
                     sx={{
-                      backgroundColor: '#f37321',
+                      backgroundColor: '#2563eb',
                       color: 'black',
                       borderRadius: '50%',
                       '&:hover': {

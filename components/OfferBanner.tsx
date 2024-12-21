@@ -32,10 +32,10 @@ const OfferBanner = () => {
               sx={{
                 mb: 2,
                 mt: 2,
-                backgroundColor: '#f37321 !important', // Set background color to #f37321
+                backgroundColor: '#2563eb !important', // Set background color to #2563eb
                 color: 'white', // Set text color to white
                 '&:hover': {
-                  backgroundColor: '#f37321 !important', // Keep the background color #f37321 on hover
+                  backgroundColor: '#2563eb !important', // Keep the background color #2563eb on hover
                   color: 'black', // Change text color to black on hover
                 },
               }}

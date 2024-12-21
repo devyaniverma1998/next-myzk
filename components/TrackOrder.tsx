@@ -19,7 +19,7 @@ const TrackOrder = () => {
         >
           <Typography
             variant="h4"
-            sx={{ color: "#f37321", display: "flex", alignItems: "center", justifyContent: "center", mb: 3 }}
+            sx={{ color: "#2563eb", display: "flex", alignItems: "center", justifyContent: "center", mb: 3 }}
           >
             <Icon className="bi bi-box-seam" sx={{ fontSize: 30, mr: 1 }} />
             Track status of your shipment.
@@ -45,7 +45,7 @@ const TrackOrder = () => {
               type="submit"
               variant="contained"
               sx={{
-                backgroundColor: "#f37321 !important" ,
+                backgroundColor: "#2563eb !important" ,
                 color: "white",
                 padding: "10px 20px",
                 "&:hover": {

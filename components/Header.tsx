@@ -210,7 +210,7 @@ const Header = () => {
                     sx={{
                       fontSize: '14px',
                       padding: '5px 8px',
-                      '&:hover': { borderBottom: '2px solid #ea580c' }
+                      '&:hover': { borderBottom: '2px solid #2563eb' }
                     }}
                   >
                     Home
@@ -232,7 +232,7 @@ const Header = () => {
                     sx={{
                       fontSize: '14px',
                       padding: '5px 8px',
-                      '&:hover': { borderBottom: '2px solid #ea580c' }
+                      '&:hover': { borderBottom: '2px solid #2563eb' }
                     }}
                   >
                     New Arrivals
@@ -244,7 +244,7 @@ const Header = () => {
                     sx={{
                       fontSize: '14px',
                       padding: '5px 8px',
-                      '&:hover': { borderBottom: '2px solid #ea580c' }
+                      '&:hover': { borderBottom: '2px solid #2563eb' }
                     }}
                   >
                     Support
@@ -256,7 +256,7 @@ const Header = () => {
                     sx={{
                       fontSize: '14px',
                       padding: '5px 8px',
-                      '&:hover': { borderBottom: '2px solid #ea580c' }
+                      '&:hover': { borderBottom: '2px solid #2563eb' }
                     }}
                   >
                     Warranty

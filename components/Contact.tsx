@@ -23,9 +23,9 @@ const Contact = () => (
         },
       }}
     >
-      <i className="ti-home" style={{ fontSize: '2rem', color: 'hsl(23.43deg 89.74% 54.12%)', marginRight: '15px' }} />
+      <i className="ti-home" style={{ fontSize: '2rem', color: 'hsl(221.21deg 83.19% 53.33%)', marginRight: '15px' }} />
       <div>
-        <Typography variant="h6" sx={{ color: 'hsl(23.43deg 89.74% 54.12%)' }}>Address</Typography>
+        <Typography variant="h6" sx={{ color: 'hsl(221.21deg 83.19% 53.33%)' }}>Address</Typography>
         <Typography variant="body1">E-169, E Block, Sector 63, Noida, Uttar Pradesh 201301</Typography>
       </div>
     </Box>
@@ -44,9 +44,9 @@ const Contact = () => (
         },
       }}
     >
-      <i className="ti-tablet" style={{ fontSize: '2rem', color: 'hsl(23.43deg 89.74% 54.12%)', marginRight: '15px' }} />
+      <i className="ti-tablet" style={{ fontSize: '2rem', color: 'hsl(221.21deg 83.19% 53.33%)', marginRight: '15px' }} />
       <div>
-        <Typography variant="h6" sx={{ color: 'hsl(23.43deg 89.74% 54.12%)' }}>Telephone</Typography>
+        <Typography variant="h6" sx={{ color: 'hsl(221.21deg 83.19% 53.33%)' }}>Telephone</Typography>
         <Typography variant="body1">
           <a href="tel:+919958039775">+91 9958039775</a>, <a href="tel:+919650745556">+91 9650745556</a>
         </Typography>
@@ -67,9 +67,9 @@ const Contact = () => (
         },
       }}
     >
-      <i className="ti-email" style={{ fontSize: '2rem', color: 'hsl(23.43deg 89.74% 54.12%)', marginRight: '15px' }} />
+      <i className="ti-email" style={{ fontSize: '2rem', color: 'hsl(221.21deg 83.19% 53.33%)', marginRight: '15px' }} />
       <div>
-        <Typography variant="h6" sx={{ color: 'hsl(23.43deg 89.74% 54.12%)' }}>Email Us</Typography>
+        <Typography variant="h6" sx={{ color: 'hsl(221.21deg 83.19% 53.33%)' }}>Email Us</Typography>
         <Typography variant="body1">
           <a href="mailto:operations@myzk.in">operations@myzk.in</a>
         </Typography>
@@ -140,7 +140,7 @@ function ContactUs() {
         component="h2"
         sx={{
           fontWeight: 600,
-          color: 'hsl(23.43deg 89.74% 54.12%)',
+          color: 'hsl(221.21deg 83.19% 53.33%)',
           mb: 3,
           textAlign: 'center',
         }}
@@ -213,7 +213,7 @@ function ContactUs() {
                   variant="contained"
                   type="submit"
                   sx={{
-                    backgroundColor: '#f37321 !important',
+                    backgroundColor: '#2563eb !important',
                     color: 'white',
                     '&:hover': {
                       color: 'Black',

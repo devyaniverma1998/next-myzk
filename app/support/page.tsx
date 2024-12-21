@@ -18,7 +18,7 @@ const SupportPage = () => {
         <Typography
           variant="h3"
           sx={{
-            color: '#f37321',
+            color: '#2563eb',
             marginBottom: '20px',
           }}
         >

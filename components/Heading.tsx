@@ -12,11 +12,14 @@ import React from 'react'
 
 const Heading = ({ title } : { title: string }) => {
   return (
-    <h1 className="  text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl 
-    font-extrabold text-center mt-20 
-    bg-gradient-to-r from-black via-[#ea580c] to-[#ea580c] 
-    bg-clip-text text-transparent
-">
+    <h1
+    className="
+      text-3xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl  
+      font-extrabold text-center mt-20 
+      bg-gradient-to-r from-black via-[#2563eb] to-[#2563eb] 
+      bg-clip-text text-transparent
+    "
+  >
    { title }</h1>
   )
 }

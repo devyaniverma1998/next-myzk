@@ -128,7 +128,7 @@ const WishItem = ({
         )}
       </td>
       <td>
-        <button className="btn btn-xs bg-black text-white hover:text-orange-500 border border-blue-500 hover:bg-white hover:text-orange-500 text-sm">
+        <button className="btn btn-xs bg-black text-white hover:text-blue-500 border border-blue-500 hover:bg-white hover:text-blue-500 text-sm">
           <FaHeartCrack />
           <span
             className="max-sm:hidden"
@@ -139,7 +139,7 @@ const WishItem = ({
         </button>
         <button 
         onClick={handleAddToCart}
-        className=" m-2 border  btn border-gray-300  bg-white text-black hover:bg-orange-600 hover:text-white hover:border-orange-900 hover:scale-110 transition-all uppercase ease-in">
+        className=" m-2 border  btn border-gray-300  bg-white text-black hover:bg-blue-600 hover:text-white hover:border-blue-900 hover:scale-110 transition-all uppercase ease-in">
           Buy Now
         </button>
           

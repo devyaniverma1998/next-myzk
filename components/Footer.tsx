@@ -51,7 +51,7 @@ const Footer = () => {
                       <Typography
                         sx={{
                           color: '#9a9b9c',
-                          '&:hover': { color: '#f37321' },
+                          '&:hover': { color: '#2563eb' },
                           textDecoration: 'none',
                           fontSize: '0.875rem'
                         }}
@@ -65,7 +65,7 @@ const Footer = () => {
                       <Typography
                         sx={{
                           color: '#9a9b9c',
-                          '&:hover': { color: '#f37321' },
+                          '&:hover': { color: '#2563eb' },
                           textDecoration: 'none',
                           fontSize: '0.875rem'
                         }}
@@ -79,7 +79,7 @@ const Footer = () => {
                       <Typography
                         sx={{
                           color: '#9a9b9c',
-                          '&:hover': { color: '#f37321' },
+                          '&:hover': { color: '#2563eb' },
                           textDecoration: 'none',
                           fontSize: '0.875rem'
                         }}
@@ -93,7 +93,7 @@ const Footer = () => {
                       <Typography
                         sx={{
                           color: '#9a9b9c',
-                          '&:hover': { color: '#f37321' },
+                          '&:hover': { color: '#2563eb' },
                           textDecoration: 'none',
                           fontSize: '0.875rem'
                         }}
@@ -107,7 +107,7 @@ const Footer = () => {
                       <Typography
                         sx={{
                           color: '#9a9b9c',
-                          '&:hover': { color: '#f37321' },
+                          '&:hover': { color: '#2563eb' },
                           textDecoration: 'none',
                           fontSize: '0.875rem'
                         }}
@@ -121,7 +121,7 @@ const Footer = () => {
                       <Typography
                         sx={{
                           color: '#9a9b9c',
-                          '&:hover': { color: '#f37321' },
+                          '&:hover': { color: '#2563eb' },
                           textDecoration: 'none',
                           fontSize: '0.875rem'
                         }}
@@ -152,7 +152,7 @@ const Footer = () => {
                       <Typography
                         sx={{
                           color: '#9a9b9c',
-                          '&:hover': { color: '#f37321' },
+                          '&:hover': { color: '#2563eb' },
                           textDecoration: 'none',
                           fontSize: '0.875rem'
                         }}
@@ -166,7 +166,7 @@ const Footer = () => {
                       <Typography
                         sx={{
                           color: '#9a9b9c',
-                          '&:hover': { color: '#f37321' },
+                          '&:hover': { color: '#2563eb' },
                           textDecoration: 'none',
                           fontSize: '0.875rem'
                         }}
@@ -180,7 +180,7 @@ const Footer = () => {
                       <Typography
                         sx={{
                           color: '#9a9b9c',
-                          '&:hover': { color: '#f37321' },
+                          '&:hover': { color: '#2563eb' },
                           textDecoration: 'none',
                           fontSize: '0.875rem'
                         }}
@@ -194,7 +194,7 @@ const Footer = () => {
                       <Typography
                         sx={{
                           color: '#9a9b9c',
-                          '&:hover': { color: '#f37321' },
+                          '&:hover': { color: '#2563eb' },
                           textDecoration: 'none',
                           fontSize: '0.875rem'
                         }}
@@ -208,7 +208,7 @@ const Footer = () => {
                       <Typography
                         sx={{
                           color: '#9a9b9c',
-                          '&:hover': { color: '#f37321' },
+                          '&:hover': { color: '#2563eb' },
                           textDecoration: 'none',
                           fontSize: '0.875rem'
                         }}
@@ -222,7 +222,7 @@ const Footer = () => {
                       <Typography
                         sx={{
                           color: "#9a9b9c",
-                          "&:hover": { color: "#f37321" },
+                          "&:hover": { color: "#2563eb" },
                           textDecoration: "none",
                           fontSize: "0.875rem",
                         }}
