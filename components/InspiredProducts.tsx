@@ -11,17 +11,15 @@
 import React, { useEffect, useState } from "react";
 import ProductItem from "./ProductItem";
 // import ENDPOINT from "../config/appConfig";
-import ENDPOINT from '@/config/appConfig';
+import ENDPOINT from "@/config/appConfig";
 
 import Heading from "./Heading";
-const InspiredProducts =  ({ props }: any) => {
+const InspiredProducts = ({ props }: any) => {
   const [products, setProducts] = useState([]);
-  const fetchEvents =  () => {
+  const fetchEvents = () => {
     try {
-
       // const url = `${ENDPOINT.BASE_URL}/api/products?filters[category][$equals]=tablets&sort=defaultSort&page=1`;
-   const url = `${process.env.NEXT_PUBLIC_BASE_URL}/api/products?filters[category][$equals]=${props.name}`
-
+      const url = `${process.env.NEXT_PUBLIC_BASE_URL}/api/products?filters[category][$equals]=${props.name}`;
 
       // const url = `${ENDPOINT.BASE_URL}/api/products?filters[category][$equals]=${
       //   slug?.searchParams?.price || 3000
@@ -34,27 +32,25 @@ const InspiredProducts =  ({ props }: any) => {
       // }sort=${slug?.searchParams?.sort}&page=${page}`;
 
       // sending API request with filtering, sorting and pagination for getting all products
-    
-    
+
       // const data = fetch(url);
       //     const products = await  data.json()
       fetch(url)
-      .then((res) => {
-        return res.json();
-      })
-      .then((data) => {
-        setProducts(data);
-      });
+        .then((res) => {
+          return res.json();
+        })
+        .then((data) => {
+          setProducts(data);
+        });
       // console.log("data,,,,,,", data);
     } catch (error) {
       console.error(error);
     }
   };
 
-  useEffect(()=>{
-
+  useEffect(() => {
     fetchEvents();
-  },[])
+  }, []);
 
   // getting all data from URL slug and preparing everything for sending GET request
   // const inStockNum = slug?.searchParams?.inStock === "true" ? 1 : 0;
@@ -112,13 +108,12 @@ const InspiredProducts =  ({ props }: any) => {
     //   <Heading title="Inspired Products" />
 
     // <div className="grid grid-cols-3 justify-items-center gap-x-2 gap-y-5 max-[1300px]:grid-cols-3 max-lg:grid-cols-2 max-[500px]:grid-cols-1">
-    
-    
+
     //   {products.length > 0 ? (
     //     products.map((product: Product) => (
     //       <ProductItem key={product.id} product={product} color="black" />
     //     ))
-    //   ) 
+    //   )
     //   : (
     //     <h3 className="text-3xl mt-5 text-center w-full col-span-full max-[1000px]:text-2xl max-[500px]:text-lg">
     //       No products found for specified query
@@ -127,17 +122,16 @@ const InspiredProducts =  ({ props }: any) => {
     // </div>
     // </>
     <div className="bg-white border-t-4 border-white">
-    <div className="max-w-screen-2xl mx-auto">
-      <Heading title="INSPIRED PRODUCTS" />
-      {/* <div className="grid grid-cols-3 justify-items-center max-w-screen-2xl mx-auto py-10 gap-x-2 px-10 gap-y-8 max-md:grid-cols-2 max-sm:grid-cols-1"> */}
-      <div className='grid grid-cols-4 justify-items-center max-w-screen-xl mx-auto py-10 gap-x-5 px-16 gap-y-8 max-md:grid-cols-2 max-sm:grid-cols-1'>
+      <div className="max-w-screen-2xl mx-auto">
+        <Heading title="INSPIRED PRODUCTS" />
+        {/* <div className="grid grid-cols-3 justify-items-center max-w-screen-2xl mx-auto py-10 gap-x-2 px-10 gap-y-8 max-md:grid-cols-2 max-sm:grid-cols-1"> */}
+        <div className="grid grid-cols-3 justify-items-center max-w-screen-xl mx-auto py-10 gap-x-5 px-16 gap-y-8 max-md:grid-cols-2 max-sm:grid-cols-1">
           {products.map((product: Product) => (
-          <ProductItem key={product.id} product={product} color="white" />
-        ))}
+            <ProductItem key={product.id} product={product} color="white" />
+          ))}
+        </div>
       </div>
     </div>
-  </div>
-
   );
 };
 
