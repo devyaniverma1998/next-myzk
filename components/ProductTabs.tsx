@@ -24,27 +24,25 @@ const ProductTabs = ({ product }: { product: Product }) => {
       <div role="tablist" className="tabs tabs-bordered">
         <a
           role="tab"
-          className={`tab text-lg text-black pb-8 max-[500px]:text-base max-[400px]:text-sm max-[370px]:text-xs ${
-            currentProductTab === 0 && "tab-active"
-          }`}
+          className={`tab text-lg text-black pb-8 max-[500px]:text-base max-[400px]:text-sm max-[370px]:text-xs ${currentProductTab === 0 && "tab-active"
+            }`}
           onClick={() => setCurrentProductTab(0)}
         >
           Description
         </a>
         <a
           role="tab"
-          className={`tab text-black text-lg pb-8 max-[500px]:text-base max-[400px]:text-sm max-[370px]:text-xs ${
-            currentProductTab === 1 && "tab-active"
-          }`}
+          className={`tab text-black text-lg pb-8 max-[500px]:text-base max-[400px]:text-sm max-[370px]:text-xs ${currentProductTab === 1 && "tab-active"
+            }`}
           onClick={() => setCurrentProductTab(1)}
         >
           Additional info
         </a>
       </div>
 
-{/* devyani */}
+      {/* devyani */}
 
-{/* <div className="p-5">
+      {/* <div className="p-5">
         {currentProductTab === 0 && (
           <>
           test
@@ -120,41 +118,71 @@ const ProductTabs = ({ product }: { product: Product }) => {
       </div> */}
 
 
-      <div className="pt-5">
+      <div className="pt-5 px-5 flex justify-center items-start">
+        {/* Product Description Tab */}
         {currentProductTab === 0 && (
-          <p className="text-lg max-sm:text-base max-sm:text-sm">
-            {product?.description}
-          </p>
+          <p className="text-lg max-sm:text-base">{product?.description}</p>
         )}
 
+        {/* Product Specifications Tab */}
         {currentProductTab === 1 && (
-          <div className="overflow-x-auto">
-            <table className="table text-xl text-center max-[500px]:text-base">
+          <div className="overflow-x-auto mt-4 w-full max-w-4xl">
+            <table className="table text-xl text-start max-[500px]:text-base w-full mx-auto">
               <tbody>
-                {/* row 1 */}
+                {/* Row 1 */}
                 <tr>
-                  <th>Manufacturer:</th>
-                  <td>{product?.manufacturer}</td>
+                  <th className="text-left pr-4 py-2">Manufacturer:</th>
+                  <td className="py-2">{product?.manufacturer}</td>
                 </tr>
-                {/* row 2 */}
+                {/* Row 2 */}
                 <tr>
-                  <th>Category:</th>
-                  <td>
+                  <th className="text-left pr-4 py-2">Category:</th>
+                  <td className="py-2"><span className="mr-2">Electronics </span>
                     {product?.category?.name
                       ? formatCategoryName(product?.category?.name)
                       : "No category"}
                   </td>
                 </tr>
-                {/* row 3 */}
+                {/* Row 3 */}
                 <tr>
-                  <th>Color:</th>
-                  <td>Silver, LightSlateGray, Blue</td>
+                  <th className="text-left pr-4 py-2">Color:</th>
+                  <td className="py-2">Silver, LightSlateGray</td>
+                </tr>
+                <tr>
+                  <th className="text-left pr-4 py-2">Connector Type:</th>
+                  <td>Micro USB</td>
+                </tr>
+                <tr>
+                  <th className="text-left pr-4 py-2">Material:</th>
+                  <td>PVC (Polyvinyl Chloride)</td>
+                </tr>
+                <tr>
+                  <th className="text-left pr-4 py-2">Data Transfer Rate:</th>
+                  <td>Up to 480 Mbps</td>
+                </tr>
+                <tr>
+                  <th className="text-left pr-4 py-2">Charging Speed:</th>
+                  <td>Up to 2.4A</td>
+                </tr>
+                <tr>
+                  <th className="text-left pr-4 py-2">Length:</th>
+                  <td>1m / 2m / 3m (Various Options)</td>
+                </tr>
+                <tr>
+                  <th className="text-left pr-4 py-2">Compatibility:</th>
+                  <td>All Micro USB Devices</td>
+                </tr>
+                <tr>
+                  <th className="text-left pr-4 py-2">Durability:</th>
+                  <td>Flexible and Tangle-Free</td>
                 </tr>
               </tbody>
             </table>
           </div>
         )}
       </div>
+
+
     </div>
   );
 };

@@ -325,7 +325,7 @@ const demoProducts = [
   },
   {
     id: "d375df73-3807-4f19-9673-6e45097d03bc",
-    title: " LightningCable",
+    title: " Lightning Cable",
     price: 499,
     salePrice: 129,
     rating: 5,
@@ -717,7 +717,7 @@ const demoProducts = [
   
   {
     id: "d375df73-0967-4f19-bshf-6e45097d03bn",
-    title: " LightningCable",
+    title: " Lightning Cable",
     price: 499,
     salePrice: 129,
     rating: 5,

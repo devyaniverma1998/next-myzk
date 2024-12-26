@@ -47,7 +47,7 @@ const SupportPage = () => {
                 }}
               >
                 <Image
-                  src="/img/track.png"
+                  src="/tracking.png"
                   alt="Track Your Order"
                   width={60}
                   height={60}
@@ -91,7 +91,7 @@ const SupportPage = () => {
                 }}
               >
                 <Image
-                  src="/img/tickets.png"
+                  src="/ticket.png"
                   alt="Tickets"
                   width={60}
                   height={60}
@@ -135,7 +135,7 @@ const SupportPage = () => {
                 }}
               >
                 <Image
-                  src="/img/warranty.png"
+                  src="/guarantee.png"
                   alt="Warranty Registration"
                   width={60}
                   height={60}

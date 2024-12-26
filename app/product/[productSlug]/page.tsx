@@ -40,7 +40,7 @@ const SingleProductPage = ({ params }: SingleProductPageProps) => {
   const message = encodeURIComponent("Check this out: "); // Add a message if desired
   const whatsappLink = `https://api.whatsapp.com/send?text=${message}${shareUrl}`;
 
-  
+
 
 
   useEffect(() => {
@@ -66,17 +66,17 @@ const SingleProductPage = ({ params }: SingleProductPageProps) => {
   return (
     <div className="bg-white">
       <div className="max-w-screen-2xl mx-auto">
-        <div className="flex justify-center gap-x-4 pt-10 max-lg:flex-col items-center gap-y-5 px-5">
-          
+        <div className="flex justify-center gap-x-4 pt-10 max-lg:flex-col items-center gap-y-5 px-5 ">
+
           {/* Left side: Alternate Images */}
-          <div className="flex flex-col gap-y-2">
+          <div className="flex flex-col gap-y-2 items-start">
             {product?.alternateImage1 && (
               <Image
                 src={`/${product.alternateImage1}`}
-                width={100}
-                height={100}
+                width={400}
+                height={400}
                 alt="alternate image 1"
-                className="w-auto h-auto border border-gray-300 shadow-sm hover:shadow-lg hover:scale-105 transition-transform duration-200 cursor-pointer"
+                className="w-[90px] h-[90px] border border-gray-900 rounded-[15px] shadow-sm hover:shadow-lg hover:scale-105 transition-transform duration-200 cursor-pointer "
                 onMouseEnter={() => handleImageHover(`/${product.alternateImage1}`)}
                 onMouseLeave={() => setMainImage(product.mainImage ? `/${product.mainImage}` : "/product_placeholder.jpg")}
               />
@@ -84,10 +84,10 @@ const SingleProductPage = ({ params }: SingleProductPageProps) => {
             {product?.alternateImage2 && (
               <Image
                 src={`/${product.alternateImage2}`}
-                width={100}
-                height={100}
+                width={400}
+                height={400}
                 alt="alternate image 2"
-                className="w-auto h-auto border border-gray-300 shadow-sm hover:shadow-lg hover:scale-105 transition-transform duration-200 cursor-pointer"
+                className="w-[90px] h-[90px] border border-gray-900 rounded-[15px] shadow-sm hover:shadow-lg hover:scale-105 transition-transform duration-200 cursor-pointer "
                 onMouseEnter={() => handleImageHover(`/${product.alternateImage2}`)}
                 onMouseLeave={() => setMainImage(product.mainImage ? `/${product.mainImage}` : "/product_placeholder.jpg")}
               />
@@ -95,10 +95,10 @@ const SingleProductPage = ({ params }: SingleProductPageProps) => {
             {product?.alternateImage3 && (
               <Image
                 src={`/${product.alternateImage3}`}
-                width={100}
-                height={100}
+                width={400}
+                height={400}
                 alt="alternate image 3"
-                className="w-auto h-auto border border-gray-300 shadow-sm hover:shadow-lg hover:scale-105 transition-transform duration-200 cursor-pointer"
+                className="w-[90px] h-[90px] border border-gray-900 rounded-[15px] shadow-sm hover:shadow-lg hover:scale-105 transition-transform duration-200 cursor-pointer "
                 onMouseEnter={() => handleImageHover(`/${product.alternateImage3}`)}
                 onMouseLeave={() => setMainImage(product.mainImage ? `/${product.mainImage}` : "/product_placeholder.jpg")}
               />
@@ -106,36 +106,38 @@ const SingleProductPage = ({ params }: SingleProductPageProps) => {
             {product?.alternateImage4 && (
               <Image
                 src={`/${product.alternateImage4}`}
-                width={100}
-                height={100}
+                width={400}
+                height={400}
                 alt="alternate image 4"
-                className="w-auto h-auto border border-gray-300 shadow-sm hover:shadow-lg hover:scale-105 transition-transform duration-200 cursor-pointer"
+                className="w-[90px] h-[90px] border border-gray-900 rounded-[15px] shadow-sm hover:shadow-lg hover:scale-105 transition-transform duration-200 cursor-pointer "
                 onMouseEnter={() => handleImageHover(`/${product.alternateImage4}`)}
                 onMouseLeave={() => setMainImage(product.mainImage ? `/${product.mainImage}` : "/product_placeholder.jpg")}
               />
             )}
           </div>
 
+
+
           {/* Main Image and Additional Content */}
           <div>
             <Image
               src={mainImage}
-              width={500}
-              height={500}
+              width={400}
+              height={400}
               alt="main image"
-              className="w-auto h-auto"
+              className="w-[400px] h-[400px]"
             />
-            
+
             {/* Thumbnail Images (Existing Mapping) */}
-            <div className="flex justify-around mt-0 flex-wrap gap-y-1 max-[500px]:justify-center max-[500px]:gap-x-1">
+            <div className="flex justify-around mt-0 flex-wrap gap-y-1 max-[400px]:justify-center max-[400px]:gap-x-1">
               {images?.map((imageItem: ImageItem) => (
                 <Image
                   key={imageItem.imageID}
                   src={`/${imageItem.image}`}
-                  width={100}
-                  height={100}
+                  width={400}
+                  height={400}
                   alt="not found"
-                  className="w-auto h-auto"
+                  className="w-[400px] h-[400px]"
                   onMouseEnter={() => handleImageHover(`/${imageItem.image}`)}
                   onMouseLeave={() => setMainImage(product.mainImage ? `/${product.mainImage}` : "/product_placeholder.jpg")}
                 />
@@ -144,42 +146,30 @@ const SingleProductPage = ({ params }: SingleProductPageProps) => {
           </div>
 
           {/* Product Details */}
-          <div className="flex flex-col gap-y-7 text-black max-[500px]:text-center px-5">
-            {/* <SingleProductRating rating={product?.rating} /> */}
-            <h1 className="text-3xl">{product?.title}</h1>
-            <p className="text-xl font-semibold line-through">₹{product?.price}</p>
-            <p className="text-xl font-semibold">₹{product?.salePrice}</p>
+          <div className="flex flex-col gap-y-6 text-black max-[500px]:text-center px-5">
+            <h1 className="text-3xl font-bold">{product?.title}</h1>
+            <span className="block w-[200px] h-[2px] bg-blue-900  mt-[-20px]"></span>
+
+            <p><span className="text-xl  line-through">₹{product?.price}</span>
+              <span className="text-xl font-semibold  ml-2">₹{product?.salePrice}</span></p>
             <StockAvailabillity stock={94} inStock={product?.inStock} />
             <SingleProductDynamicFields product={product} />
-            
+
             {/* Wishlist and SKU, Social Media, Payment Icons */}
             <div className="flex flex-col gap-y-2 max-[500px]:items-center">
               <AddToWishlistBtn product={product} slug={params.productSlug} />
               <p className="text-lg">
-                SKU: <span className="ml-1">abccd-18</span>
+                SKU: <span className="ml-1">Myzk-1</span>
               </p>
               <div className="text-lg flex gap-x-2">
                 <span>Share:</span>
-                {/* <div className="flex items-center gap-x-1 text-2xl">
-                   <FaSquareFacebook />
-                  <FaSquareXTwitter />
-                  <FaSquarePinterest /> 
-                  <FaSquareWhatsapp />
-                </div> */}
-            <div className="flex items-center gap-x-1 text-2xl">
-      <a href={`${whatsappLink}${params.productSlug}`} target="_blank" rel="noopener noreferrer">
-        <FaSquareWhatsapp />
-      </a>
-    </div>
+                <div className="flex items-center gap-x-2 text-2xl">
+                  <a href={`${whatsappLink}${params.productSlug}`} target="_blank" rel="noopener noreferrer">
+                    <FaSquareWhatsapp />
+                  </a>
+                </div>
               </div>
-              <div className="flex gap-x-2">
-                <Image src="/visa.svg" width={50} height={50} alt="visa icon" className="w-auto h-auto" />
-                <Image src="/mastercard.svg" width={50} height={50} alt="mastercard icon" className="h-auto w-auto" />
-                <Image src="/ae.svg" width={50} height={50} alt="american express icon" className="h-auto w-auto" />
-                <Image src="/paypal.svg" width={50} height={50} alt="paypal icon" className="w-auto h-auto" />
-                <Image src="/dinersclub.svg" width={50} height={50} alt="diners club icon" className="h-auto w-auto" />
-                <Image src="/discover.svg" width={50} height={50} alt="discover icon" className="h-auto w-auto" />
-              </div>
+
             </div>
           </div>
         </div>
@@ -190,6 +180,7 @@ const SingleProductPage = ({ params }: SingleProductPageProps) => {
         </div>
       </div>
     </div>
+
   );
 };
 
