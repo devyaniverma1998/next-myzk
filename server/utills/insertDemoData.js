@@ -7,7 +7,7 @@ const demoProducts = [
   // charger section start
   {
     id: "bb8e0a4e-98d1-4c25-adfc-0c46113aec7a",
-    title: "5V 1A Mobile Charger",
+    title: "5V 1A Charger",
     price: 499,
     salePrice: 149,
     rating: 5,
@@ -25,7 +25,7 @@ const demoProducts = [
   },
   {
     id: "3dc9ab53-cc23-4932-9418-a4611dafdf8c",
-    title: "5V-2.4A Mobile Charger",
+    title: "5V-2.4A Charger",
     price: 499,
     salePrice: 199,
     rating: 5,
@@ -569,7 +569,7 @@ const demoProducts = [
   },
   {
     id: "3dc9ab53-cc23-4932-9418-a4611dgdf8cg",
-    title: "5V-2.4A Mobile Charger",
+    title: "5V-2.4A Charger",
     price: 499,
     salePrice: 199,
     rating: 5,
@@ -698,7 +698,7 @@ const demoProducts = [
   },
   {
     id: "3dc9ab53-0083-4932-9gdr-a4611d09bdm6",
-    title: "5V-2.4A Mobile Charger",
+    title: "5V-2.4A Charger",
     price: 499,
     salePrice: 199,
     rating: 5,
