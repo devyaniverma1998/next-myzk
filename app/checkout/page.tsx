@@ -46,7 +46,6 @@ interface PaymentPayload {
     type: string;
   };
 }
-
 const CheckoutPage = () => {
   const { data: session, status: sessionStatus } = useSession();
   const [checkoutForm, setCheckoutForm] = useState({
@@ -54,10 +53,6 @@ const CheckoutPage = () => {
     lastname: "",
     phone: "",
     email: "",
-    // cardName: "",
-    // cardNumber: "",
-    // expirationDate: "",
-    // cvc: "",
     company: "",
     adress: "",
     apartment: "",
@@ -68,60 +63,7 @@ const CheckoutPage = () => {
   });
   const { products, total, clearCart } = useProductStore();
   const router = useRouter();
-  // const makePayment = async (
-  //   mobile: string,
-  //   total: number,
-  //   orderId: string
-  // ) => {
-  //   // const transactionId = "Tr-" + uuidv4().toString(36).slice(-6);
-  //   const transactionId = orderId;
-  //   //transaction id will be order id for us
-  //   const payload: PaymentPayload = {
-  //     merchantId: `${process.env.NEXT_PUBLIC_MERCHANT_ID }`,
-  //     merchantTransactionId: transactionId,
-  //     // merchantUserId: 'MUID-' + uuidv4().toString(36).slice(-6),
-  //     merchantUserId: "MUID-" + uuidv4().slice(-6),
-  //     amount: total,
-  //     redirectUrl: `${process.env.NEXT_PUBLIC_PAYMENT_REDIRECT_URL}/api/status/${transactionId}`,
-  //     redirectMode: "POST",
-  //     callbackUrl: `${process.env.NEXT_PUBLIC_PAYMENT_REDIRECT_URL}/api/status/${transactionId}`,
-  //     mobileNumber: mobile,
-  //     paymentInstrument: { type: "PAY_PAGE" },
-  //   };
-
-  //   const dataPayload = JSON.stringify(payload);
-  //   const dataBase64 = Buffer.from(dataPayload).toString("base64");
-
-  //   const fullURL =
-  //     dataBase64 + "/pg/v1/pay" + process.env.NEXT_PUBLIC_SALT_KEY;
-  //   const dataSha256 = sha256(fullURL);
-  //   const checksum = dataSha256 + "###" + process.env.NEXT_PUBLIC_SALT_INDEX;
-
-  //   const UAT_PAY_API_URL = process.env.NEXT_PUBLIC_PAYMENT_BASE_URL +  "/pg/v1/pay";
-
-  //   // const UAT_PAY_API_URL =
-  //   //   "https://api-preprod.phonepe.com/apis/pg-sandbox/pg/v1/pay";
-
-  //   try {
-  //     const response = await axios.post(
-  //       UAT_PAY_API_URL,
-  //       { request: dataBase64 },
-  //       {
-  //         headers: {
-  //           accept: "application/json",
-  //           "Content-Type": "application/json",
-  //           "X-VERIFY": checksum,
-  //         },
-  //       }
-  //     );
-
-  //     const redirectUrl =
-  //       response.data.data.instrumentResponse.redirectInfo.url;
-  //     router.push(redirectUrl);
-  //   } catch (error) {
-  //     console.error("Payment error:", error);
-  //   }
-  // };
+ 
   const addOrderProduct = async (
     orderId: string,
     productId: string,
@@ -149,9 +91,6 @@ const CheckoutPage = () => {
       checkoutForm.lastname.length > 0 &&
       checkoutForm.phone.length > 0 &&
       checkoutForm.email.length > 0 &&
-      // checkoutForm.cardName.length > 0 &&
-      // checkoutForm.expirationDate.length > 0 &&
-      // checkoutForm.cvc.length > 0 &&
       checkoutForm.company.length > 0 &&
       checkoutForm.adress.length > 0 &&
       checkoutForm.apartment.length > 0 &&
@@ -178,29 +117,6 @@ const CheckoutPage = () => {
         return;
       }
 
-      // if (!isValidNameOrLastname(checkoutForm.cardName)) {
-      //   toast.error("You entered invalid format for card name");
-      //   return;
-      // }
-
-      // if (!isValidCardNumber(checkoutForm.cardNumber)) {
-      //   toast.error("You entered invalid format for credit card number");
-      //   return;
-      // }
-
-      // if (!isValidCreditCardExpirationDate(checkoutForm.expirationDate)) {
-      //   toast.error(
-      //     "You entered invalid format for credit card expiration date"
-      //   );
-      //   return;
-      // }
-
-      // if (!isValidCreditCardCVVOrCVC(checkoutForm.cvc)) {
-      //   toast.error("You entered invalid format for credit card CVC or CVV");
-      //   return;
-      // }
-
-      // sending API request for creating a order
 
       const response = fetch(process.env.NEXT_PUBLIC_BASE_URL + "/api/orders", {
       // const response = fetch(ENDPOINT.BASE_URL + "/api/orders", {
@@ -519,118 +435,7 @@ const CheckoutPage = () => {
                 </div>
               </section>
 
-              {/* 
-            <section aria-labelledby="payment-heading" className="mt-10">
-              <h2
-                id="payment-heading"
-                className="text-lg font-medium text-gray-900"
-              >
-                Payment details
-              </h2>
-
-              <div className="mt-6 grid grid-cols-3 gap-x-4 gap-y-6 sm:grid-cols-4">
-                <div className="col-span-3 sm:col-span-4">
-                  <label
-                    htmlFor="name-on-card"
-                    className="block text-sm font-medium text-gray-700"
-                  >
-                    Name on card
-                  </label>
-                  <div className="mt-1">
-                    <input
-                      type="text"
-                      id="name-on-card"
-                      name="name-on-card"
-                      autoComplete="cc-name"
-                      className="block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 sm:text-sm"
-                      value={checkoutForm.cardName}
-                      onChange={(e) =>
-                        setCheckoutForm({
-                          ...checkoutForm,
-                          cardName: e.target.value,
-                        })
-                      }
-                    />
-                  </div>
-                </div>
-
-                <div className="col-span-3 sm:col-span-4">
-                  <label
-                    htmlFor="card-number"
-                    className="block text-sm font-medium text-gray-700"
-                  >
-                    Card number
-                  </label>
-                  <div className="mt-1">
-                    <input
-                      type="text"
-                      id="card-number"
-                      name="card-number"
-                      autoComplete="cc-number"
-                      className="block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 sm:text-sm"
-                      value={checkoutForm.cardNumber}
-                      onChange={(e) =>
-                        setCheckoutForm({
-                          ...checkoutForm,
-                          cardNumber: e.target.value,
-                        })
-                      }
-                    />
-                  </div>
-                </div>
-
-                <div className="col-span-2 sm:col-span-3">
-                  <label
-                    htmlFor="expiration-date"
-                    className="block text-sm font-medium text-gray-700"
-                  >
-                    Expiration date (MM/YY)
-                  </label>
-                  <div className="mt-1">
-                    <input
-                      type="text"
-                      name="expiration-date"
-                      id="expiration-date"
-                      autoComplete="cc-exp"
-                      className="block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 sm:text-sm"
-                      value={checkoutForm.expirationDate}
-                      onChange={(e) =>
-                        setCheckoutForm({
-                          ...checkoutForm,
-                          expirationDate: e.target.value,
-                        })
-                      }
-                    />
-                  </div>
-                </div>
-
-                <div>
-                  <label
-                    htmlFor="cvc"
-                    className="block text-sm font-medium text-gray-700"
-                  >
-                    CVC or CVV
-                  </label>
-                  <div className="mt-1">
-                    <input
-                      type="text"
-                      name="cvc"
-                      id="cvc"
-                      autoComplete="csc"
-                      className="block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 sm:text-sm"
-                      value={checkoutForm.cvc}
-                      onChange={(e) =>
-                        setCheckoutForm({
-                          ...checkoutForm,
-                          cvc: e.target.value,
-                        })
-                      }
-                    />
-                  </div>
-                </div>
-              </div>
-            </section> */}
-
+             
               <section aria-labelledby="shipping-heading" className="mt-10">
                 <h2
                   id="shipping-heading"
@@ -763,30 +568,7 @@ const CheckoutPage = () => {
                     </div>
                   </div>
 
-                  {/* <div>
-                    <label
-                      htmlFor="postal-code"
-                      className="block text-sm font-medium text-gray-700"
-                    >
-                      Postal code.
-                    </label>
-                    <div className="mt-1">
-                      <input
-                        type="text"
-                        id="postal-code"
-                        name="postal-code"
-                        autoComplete="postal-code"
-                        className="block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 sm:text-sm"
-                        value={checkoutForm.postalCode}
-                        onChange={(e) =>
-                          setCheckoutForm({
-                            ...checkoutForm,
-                            postalCode: e.target.value,
-                          })
-                        }
-                      />
-                    </div>
-                  </div> */}
+                  
 
                   <div>
                     <label

@@ -38,14 +38,7 @@ const Hero = () => {
       id: 3,
       image: "/img/banner.jpg",
     },
-    {
-      id: 4,
-      image: "/img/banner-4.jpg",
-    },
-    {
-      id: 5,
-      image: "/img/banner-5.jpg",
-    },
+    
   ];
 
   return (
