@@ -69,7 +69,8 @@ const SingleProductPage = ({ params }: SingleProductPageProps) => {
         <div className="flex justify-center gap-x-4 pt-10 max-lg:flex-col items-center gap-y-5 px-5 ">
 
           {/* Left side: Alternate Images */}
-          <div className="flex flex-col gap-y-2 items-start">
+         <div className="flex pb-2">
+         <div className="flex flex-col gap-y-2 items-start">
             {product?.alternateImage1 && (
               <Image
                 src={`/${product.alternateImage1}`}
@@ -119,7 +120,7 @@ const SingleProductPage = ({ params }: SingleProductPageProps) => {
 
 
           {/* Main Image and Additional Content */}
-          <div>
+          <div className="px-3">
             <Image
               src={mainImage}
               width={400}
@@ -144,6 +145,7 @@ const SingleProductPage = ({ params }: SingleProductPageProps) => {
               ))}
             </div>
           </div>
+         </div>
 
           {/* Product Details */}
           <div className="flex flex-col gap-y-6 text-black max-[500px]:text-center px-5">
