@@ -1,8 +1,10 @@
 import React from 'react';
 import { Box, Container, Typography, Button } from '@mui/material';
+import OurCategory from './OurCategory';
 
 const OfferBanner = () => {
   return (
+
     <section
       style={{
         backgroundImage: "url('/offbanner.webp')",
@@ -11,6 +13,7 @@ const OfferBanner = () => {
         padding: '10rem 0',
       }}
     >
+       
       <Container>
         <Box display="flex" justifyContent="center" alignItems="center">
           <Box textAlign="center">
@@ -46,6 +49,7 @@ const OfferBanner = () => {
           </Box>
         </Box>
       </Container>
+     
     </section>
   );
 };

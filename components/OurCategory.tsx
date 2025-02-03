@@ -4,7 +4,12 @@ import Link from "next/link";
 
 const OurCategory = () => {
   return (
-    <section style={{ padding: "80px 0" }}>
+    <section   style={{
+        backgroundImage: "url('/offbanner.webp')",
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        padding: '10rem 0',
+      }}>
       <Container>
         <Grid container spacing={4} justifyContent="center">
           <Grid item xs={12} sm={8} md={6} textAlign="center">

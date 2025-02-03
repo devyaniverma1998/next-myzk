@@ -1,4 +1,3 @@
-
 import {
   CategoryMenu,
   Hero,
@@ -20,20 +19,17 @@ import News from "@/components/NewsLetterfooter";
 import NewsLetterfooter from "@/components/NewsLetterfooter";
 import OurCategory from "@/components/OurCategory";
 
-
 export default function Home() {
-
-
   return (
     <>
       <Hero />
-      <OurCategory/>
-      <TopSellingProducts props={{name:"topselling-products"}} />
+      <OurCategory />
+      <TopSellingProducts props={{ name: "topselling-products" }} />
       <OfferBanner />
-      <NewProducts props={{name:"new-products"}} />
-      <ExtraBanner/>
-      <InspiredProducts props={{name:"inspired-products"}} />
-      <NewsLetterfooter/>
+      <NewProducts props={{ name: "new-products" }} />
+      <ExtraBanner />
+      <InspiredProducts props={{ name: "inspired-products" }} />
+      <NewsLetterfooter />
     </>
   );
 }
